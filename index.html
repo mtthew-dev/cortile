@@ -481,7 +481,7 @@
           <textarea id="observacoes" rows="4" placeholder="Observações"></textarea>
         </div>
 
-        <button type="submit">Consultar Valores</button>
+        <button type="button" id="btnEnviar">Consultar Valores</button>
       </form>
 
       <div class="linhaDivisoria"></div>
@@ -513,8 +513,12 @@
       }
     });
 
-    document.getElementById("formEvento").addEventListener("submit", function(e) {
-  e.preventDefault();
+    document.getElementById("btnEnviar").addEventListener("click", function() {
+  const form = document.getElementById("formEvento");
+  if (!form.checkValidity()) {
+    form.reportValidity();
+    return;
+  }
 
   const nome = document.getElementById("nome").value;
   const telefone = document.getElementById("telefone").value;
@@ -528,15 +532,8 @@
   const mensagem =
     `Olá! Gostaria de consultar os valores para um evento.\n\nNome: ${nome}\nTelefone: ${telefone}\nEmail: ${email}\nTipo de Evento: ${tipoEvento}\nData: ${data}\nHorário: ${horario}\nParticipantes: ${participantes}\n\nObservações: ${observacoes}`;
 
-  const numeroRestaurante = "5585991133658";
-  const link = `https://wa.me/${numeroRestaurante}?text=${encodeURIComponent(mensagem)}`;
-  const a = document.createElement("a");
-  a.href = link;
-  a.target = "_blank";
-  a.rel = "noopener noreferrer";
-  document.body.appendChild(a);
-  a.click();
-  document.body.removeChild(a);
+  const link = `https://wa.me/5585991133658?text=${encodeURIComponent(mensagem)}`;
+  window.open(link, "_blank");
 });
   </script>
 
