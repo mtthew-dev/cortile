@@ -1,0 +1,177 @@
+/* ===== FOOTER ===== */
+footer {
+  background: linear-gradient(135deg, #f5e6d3 0%, #f8ead9 100%);
+  color: #1e3226;
+  font-family: 'Lato', sans-serif;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 420px;
+}
+
+/* Lado esquerdo - info */
+.footer-info {
+  padding: 60px 56px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.footer-info h2 {
+  font-family: 'Cinzel', serif;
+  font-size: 2.2rem;
+  font-weight: 400;
+  color: #1e3226;
+  margin: 0;
+}
+
+.footer-bloco {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.footer-icon {
+  color: #c27e35;
+  margin-top: 2px;
+  flex-shrink: 0;
+}
+
+.footer-label {
+  display: block;
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  color: #c27e35;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.footer-address {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #1e3226;
+  margin: 0 0 2px;
+}
+
+.footer-sub {
+  font-size: 0.85rem;
+  color: #666c6a;
+  margin: 0 0 10px;
+}
+
+.footer-maps-link {
+  font-size: 0.85rem;
+  color: #c27e35;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: color 0.2s;
+}
+
+.footer-maps-link:hover {
+  color: #1e3226;
+}
+
+.footer-bloco p {
+  margin: 0 0 4px;
+  font-size: 0.9rem;
+  color: #3a5a47;
+  line-height: 1.6;
+}
+
+.footer-bloco p strong {
+  color: #1e3226;
+  font-weight: 700;
+}
+
+/* Botões */
+.footer-actions {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.footer-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 28px;
+  font-family: 'Lato', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-decoration: none;
+  transition: background-color 0.2s, color 0.2s, border-color 0.2s;
+  cursor: pointer;
+}
+
+.footer-btn-primary {
+  background-color: #c27e35;
+  color: #fff;
+  border: 1px solid #c27e35;
+}
+
+.footer-btn-primary:hover {
+  background-color: #a86a28;
+  border-color: #a86a28;
+}
+
+.footer-btn-secondary {
+  background-color: transparent;
+  color: #1e3226;
+  border: 1px solid #b0a898;
+}
+
+.footer-btn-secondary:hover {
+  border-color: #c27e35;
+  color: #c27e35;
+}
+
+/* Lado direito - mapa */
+.footer-map {
+  position: relative;
+  min-height: 420px;
+}
+
+.footer-map iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  filter: grayscale(10%) contrast(1.05);
+}
+
+/* Rodapé inferior */
+.footer-bottom {
+  border-top: 1px solid #e0d0b8;
+  padding: 18px 56px;
+  text-align: center;
+  background: linear-gradient(135deg, #f0dfc8 0%, #f5e6d3 100%);
+}
+
+.footer-bottom p {
+  margin: 0;
+  font-size: 0.75rem;
+  color: #9a8a78;
+  letter-spacing: 0.05em;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-info {
+    padding: 48px 24px;
+  }
+
+  .footer-map {
+    min-height: 300px;
+  }
+
+  .footer-bottom {
+    padding: 18px 24px;
+  }
+}

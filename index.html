@@ -1,0 +1,615 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="src/css/style.css" />
+  <link rel="stylesheet" href="src/css/footer.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Lato:wght@300;400;700&display=swap"
+    rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap"
+    rel="stylesheet">
+  <title>Cortile Ristorante</title>
+</head>
+
+<body>
+  <header>
+    <a href="#">
+      <img src="src/images/Cortile-Logo.png" alt="Cortile Ristorante Logo" class="logo" />
+    </a>
+    <nav>
+      <a href="#sobre">Sobre</a>
+      <a href="#cardapio">Menu</a>
+      <a href="#evento">Eventos</a>
+      <a href="#localização">Localização</a>
+    </nav>
+    <a href="#evento" class="btn-reserva">Reservar Mesa</a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <video autoplay muted loop playsinline>
+        <source src="src/video/cortilehero.mp4" type="video/mp4" />
+      </video>
+      <div class="hero_overlay"></div>
+      <div class="hero_content">
+        <span>ANDREA ANTONUCCI</span>
+        <h1>
+          Mangia Bene, <br />
+          Ridi Spesso, <br />
+          Ama Tanto
+        </h1>
+        <p>Autêntica cozinha italiana no coração de Fortaleza.</p>
+      </div>
+    </section>
+
+
+
+    <!--Bloco com titulos e credencias do restaurante-->
+    <section class="certificado">
+
+      <div class="logoTrip">
+        <img src="src/images/TripAdvisorLogo.jpg" alt="logo do restaurante cortile">
+      </div>
+
+      <div class="titulo-secao">
+
+        <h2>Selo Traveller's Choice da Tripadvisor</h2>
+
+        <h5>10% Melhores Restaurantes - Cortile Ristorante</h5>
+
+        <p>A alta gastronomia e a excelência do atendimento no Cortile Ristorante foram reconhecidas com o selo
+          "Travellers Choice”, da TripAdvisor. A honraria coloca o restaurante no top 10% dos melhores restaurantes do
+          mundo que contém perfil no site, um dos maiores de viagens e gastronomia.
+
+        </p>
+
+      </div>
+
+      <div class="certificadoInfo">
+
+        <div class="infoItemCert">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-google"
+            viewBox="0 0 16 16">
+            <path
+              d="M15.545 6.558a9.4 9.4 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.7 7.7 0 0 1 5.352 2.082l-2.284 2.284A4.35 4.35 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.8 4.8 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.7 3.7 0 0 0 1.599-2.431H8v-3.08z" />
+          </svg>
+          <h3>4.6/5.0</h3>
+          <p>+ DE 600 AVALIAÇÕES REAIS</p>
+        </div>
+
+        <div class="infoItemCert">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+            class="bi bi-calendar-check-fill" viewBox="0 0 16 16">
+            <path
+              d="M4 .5a.5.5 0 0 0-1 0V1H2a2 2 0 0 0-2 2v1h16V3a2 2 0 0 0-2-2h-1V.5a.5.5 0 0 0-1 0V1H4zM16 14V5H0v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2m-5.146-5.146-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708.708" />
+          </svg>
+          <h3>Eventos personalizados</h3>
+          <p>PARA PALADARES QUE BUSCAM EXCLUSIVIDADE</p>
+        </div>
+
+        <div class="infoItemCert">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-fork-knife"
+            viewBox="0 0 16 16">
+            <path
+              d="M13 .5c0-.276-.226-.506-.498-.465-1.703.257-2.94 2.012-3 8.462a.5.5 0 0 0 .498.5c.56.01 1 .13 1 1.003v5.5a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5zM4.25 0a.25.25 0 0 1 .25.25v5.122a.128.128 0 0 0 .256.006l.233-5.14A.25.25 0 0 1 5.24 0h.522a.25.25 0 0 1 .25.238l.233 5.14a.128.128 0 0 0 .256-.006V.25A.25.25 0 0 1 6.75 0h.29a.5.5 0 0 1 .498.458l.423 5.07a1.69 1.69 0 0 1-1.059 1.711l-.053.022a.92.92 0 0 0-.58.884L6.47 15a.971.971 0 1 1-1.942 0l.202-6.855a.92.92 0 0 0-.58-.884l-.053-.022a1.69 1.69 0 0 1-1.059-1.712L3.462.458A.5.5 0 0 1 3.96 0z" />
+          </svg>
+          <h3>Uma viagem para a Itália</h3>
+          <p>EXPERIÊNCIA GASTRONÔMINCA INCRÍVEL</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!--Bloco contendo informações e a história-->
+    <section id="sobre" class="sobreH">
+
+      <div class="titulo-secao">
+
+        <h5>O NOSSO ESPAÇO</h5>
+
+        <h2>Mais que uma pizza, um encontro</h2>
+
+        <div class="linhaDivisoria"></div>
+
+        <p>Somos uma verdadeira viagem gastronômica diretamente para a Itália, nosso Chef Andrea Antonucci, italiano de
+          origem frosinone é membro da federação italiana brasil Chef e está sempre em busca da harmonia perfeita entre
+          os clássicos da gastronomia italiana , o contemporâneo e o novo. Criando o equilíbrio em cada prato.</p>
+
+      </div>
+
+      <div class="sobreGaleria">
+
+        <div class="sobreGalerGeral">
+          <div class="sobreGaleriaItem">
+
+            <img src="src/images/sobre/varanda-climatizada.jpg" alt="">
+
+          </div>
+
+          <div class="sobreGaleriaItem">
+
+            <img src="src/images/sobre/bar-de-espera-ao-ar-livre.jpg" alt="">
+
+          </div>
+
+          <div class="sobreGaleriaItem">
+
+            <img src="src/images/sobre/nossa-adega.jpg" alt="">
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <section class="historia">
+
+      <div class="titulo-secao">
+
+        <h5>A NOSSA RAÍZ</h5>
+
+        <h2>Da pandemia para a perenidade e legado marcado</h2>
+
+        <div class="linhaDivisoria"></div>
+
+        <article class="timeline">
+
+          <div class="timeline-item">
+
+            <div class="timeline-ano">
+              2021
+            </div>
+
+            <div class="timeline-conteudo">
+
+              <h3></h3>
+
+              <p>
+                O projeto nasceu da necessidade de diversificação do Grupo OE (Oficina de Eventos), cujas operações de
+                grandes eventos foram paralisadas pela pandemia de Covid-19. Os sócios Gabrielle Nobre, Duda Barros,
+                Charles Dal Belo, João Mello e o chef Andrea Antonucci uniram forças para criar um restaurante que
+                pudesse operar com segurança e atender ao desejo das pessoas de voltar a frequentar locais de
+                entretenimento.
+              </p>
+
+            </div>
+
+          </div>
+
+          <div class="timeline-item">
+
+            <div class="timeline-ano">
+              2022
+            </div>
+
+            <div class="timeline-conteudo">
+
+              <h3></h3>
+
+              <p>
+                Após um primeiro ano desafiador, o restaurante solidificou sua clientela e reputação. O sucesso do
+                modelo permitiu que o grupo de sócios expandisse seus negócios. Em 2022, foi inaugurado o Ponza Frutos
+                do Mar, o segundo restaurante do grupo, aplicando a mesma gestão de excelência.
+              </p>
+
+            </div>
+
+          </div>
+
+          <div class="timeline-item">
+
+            <div class="timeline-ano">
+              2023
+            </div>
+
+            <div class="timeline-conteudo">
+
+              <h3></h3>
+
+              <p>
+                Este foi um ano de grandes validações externas para a qualidade do serviço e da culinária. Em outubro de
+                2023, o Cortile recebeu o selo da TripAdvisor, que o colocou entre os 10% melhores restaurantes do mundo
+                na plataforma, baseando-se em milhões de avaliações de viajantes.
+              </p>
+
+            </div>
+
+          </div>
+
+          <div class="timeline-item">
+
+            <div class="timeline-ano">
+              2024
+            </div>
+
+            <div class="timeline-conteudo">
+
+              <h3></h3>
+
+              <p>
+                Com três anos de operação, o restaurante atingiu a maturidade operacional e financeira planejada pelos
+                sócios. O Cortile manteve-se como a âncora de alta gastronomia do grupo, focado em crescimento orgânico
+                e sólido, resistindo a propostas de expansão imediata para outras cidades para garantir a perenidade da
+                marca
+              </p>
+
+            </div>
+
+          </div>
+
+          <div class="timeline-item">
+
+            <div class="timeline-ano">
+              <span class="ano-year">2025</span>
+              <span class="ano-year">2026</span>
+            </div>
+
+            <div class="timeline-conteudoD">
+
+              <h3></h3>
+
+              <p>
+                Atualmente, o Cortile Ristorante opera como um estabelecimento perene, cumprindo o objetivo inicial de
+                atravessar gerações. Continua operando sob o slogan "Mangia Bene, Ride Spesso, Ama Tanto!" (Coma bem,
+                ria sempre e ame muito), com foco total na experiência do cliente e na manutenção dos altos padrões que
+                lhe garantiram o prestígio internacional.
+              </p>
+
+            </div>
+
+          </div>
+
+        </article>
+    </section>
+
+    <!--Bloco do cardápio, contendo cards com os pratos, seus respectivos preços e imagens-->
+    <section id="cardapio" class="cardapio">
+
+      <div class="titulo-secao">
+
+        <h5>A NOSSA ARTE</h5>
+
+        <h2>O Menu</h2>
+
+        <div class="linhaDivisoria"></div>
+
+        <p>
+          Pratos preparados com ingredientes frescos
+          e receitas tradicionais italianas.
+        </p>
+
+      </div>
+
+      <div class="cards-cardapio">
+
+        <div class="card-item">
+
+          <img src="src/images/cardapio/carpaccioClassico.jpg" alt="Carpaccio Clássico">
+
+          <h3>Carpaccio Clássico</h3>
+
+          <p>
+            Molho à base de mostarda dijon, finalizado com
+            rúcula e lascas de parmesão.
+          </p>
+
+          <span>R$ 65,00</span>
+
+          <button class="btnCardapio">
+            Pedir agora
+          </button>
+
+        </div>
+
+        <div class="card-item">
+
+          <img src="src/images/cardapio/polvo.jpg" alt="Spaghetti Al Frutti di Mare">
+
+          <h3>Spaghetti Al Frutti di Mare</h3>
+
+          <p>
+            Camarão, lula, polvo, e lagosta refogados ao molho
+            de vinho branco.
+          </p>
+
+          <span>R$ 98,00</span>
+
+          <button class="btnCardapio">
+            Pedir agora
+          </button>
+
+        </div>
+
+        <div class="card-item">
+
+          <img src="src/images/cardapio/al-tartufo.jpg" alt="Al Tartufo">
+
+          <h3>Al Tartufo</h3>
+
+          <p>
+            Filé grelhado com molho trufado, acompanha
+            fettuccine na manteiga de parmesão.
+          </p>
+
+          <span>R$ 109,00</span>
+
+          <button class="btnCardapio">
+            Pedir agora
+          </button>
+
+        </div>
+
+        <div class="card-item">
+
+          <img src="src/images/cardapio/raviloli.jpg" alt="Raviolí">
+
+          <h3>Raviolí</h3>
+
+          <p>
+            Recheado com mussarela de búfala, molho de
+            tomate e finalizado com pesto.
+          </p>
+
+          <span>R$ 75,00</span>
+
+          <button class="btnCardapio">
+            Pedir agora
+          </button>
+
+        </div>
+
+      </div>
+
+      <div class="cardapioCompleto">
+        <div class="separador-cardapio">
+          <span class="separador-linha"></span>
+          <span class="separador-icone">✦</span>
+          <span class="separador-linha"></span>
+        </div>
+
+        <a href="src/pdf/Cortile - Menu Principal.pdf" target="_blank" class="btn-cardapio-completo">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-book-fill" viewBox="0 0 16 16">
+            <path d="M8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783" />
+          </svg>
+          Ver Cardápio Completo
+        </a>
+      </div>
+
+    </section>
+    <!--Seção de Eventos -->
+    <section id="evento" class="evento">
+
+      <div class="banner">
+        <img src="src/images/galeria/cortile.jpg" alt="espaço para eventos" class="banner-img">
+        <div class="banner-overlay"></div>
+        <div class="banner-text">
+          <h1>Eventos</h1>
+          <p>Conheça nosso espaço e viva experiências inesquecíveis!</p>
+        </div>
+      </div>
+
+      <div class="galeria">
+        <h2>Nossa Galeria</h2>
+        <div class="container-texto">
+          <article class="texto">
+            <p>
+              • Celebrações especiais, casamentos, <br>
+              aniversários, nossa equipe cuida de tudo<br>
+              para que você possa ter um momento de lazer <br>
+              e alegria com seus convidados.
+            </p>
+          </article>
+
+          <article class="texto">
+            <p>
+              • Reuniões, jantares de negócios. <br>A casa oferece ambiente climatizado, com privacidade, segurança e<br> elegância gastronômica que o evento da sua empresa<br> precisa para futuros parceiros.
+            </p>
+          </article>
+        </div>
+
+        <figure class="evento-galeria">
+          <img src="src/images/eventos/mesa.jpeg" alt="mesas" class="evento-img">
+          <img src="src/images/eventos/guardanapo.jpg" alt="espaço" class="evento-img">
+          <img src="src/images/eventos/casamento2.jpg" alt="decoração" class="evento-img">
+          <img src="src/images/eventos/fora.jpg" alt="lateral aberta" class="evento-img">
+          <img src="src/images/eventos/casamento.jpeg" alt="casamento" class="evento-img">
+          <img src="src/images/galeria/espaco.jpeg" alt="decoração" class="evento-img">
+
+          <figcaption>
+            Cada evento é único — e nós cuidamos de cada detalhe para que o seu seja perfeito. Preencha o formulário e entraremos em contato!
+          </figcaption>
+        </figure>
+      </div>
+
+      <div id="modal" class="modal">
+        <span id="fechar">&times;</span>
+        <img id="imagemGrande" alt="Imagem ampliada">
+      </div>
+
+      <form id="formEvento">
+        <div class="form-item">
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome" placeholder="Nome" required>
+        </div>
+
+        <div class="form-item">
+          <label for="tel">Telefone:</label>
+          <input type="tel" id="telefone" placeholder="Telefone" required>
+        </div>
+
+        <div class="form-item">
+          <label for="date">Data:</label>
+          <input type="date" id="data" placeholder="Data" required>
+        </div>
+
+        <div class="form-item">
+          <label for="horario">Horário</label>
+          <input type="time" id="horario" placeholder="Horário" required>
+        </div>
+
+        <div class="form-item">
+          <label for="email">Email:</label>
+          <input type="email" id="email" placeholder="Email" required>
+        </div>
+
+        <div class="form-item">
+          <label for="tipoEvento">Evento</label>
+          <select id="tipoEvento" required>
+            <option value="">Selecione</option>
+            <option>Casamento</option>
+            <option>Confraternização</option>
+            <option>Evento Corporativo</option>
+            <option>Aniversário</option>
+            <option>Casual</option>
+          </select>
+        </div>
+
+        <div class="form-item">
+          <label for="number">Quantidade de Participantes:</label>
+          <input type="number" id="participantes" placeholder="Quantidade de participantes" required>
+        </div>
+
+        <div class="form-item">
+          <label for="observações">Observações:</label>
+          <textarea id="observacoes" rows="4" placeholder="Observações"></textarea>
+        </div>
+
+        <button type="submit">Consultar Valores</button>
+      </form>
+
+      <div class="linhaDivisoria"></div>
+    </section>
+
+  </main>
+
+  <script>
+    const imagens = document.querySelectorAll("figure img");
+    const modal = document.getElementById("modal");
+    const imagemGrande = document.getElementById("imagemGrande");
+    const fechar = document.getElementById("fechar");
+
+    imagens.forEach(imagem => {
+      imagem.addEventListener("click", () => {
+        modal.style.display = "flex";
+        imagemGrande.src = imagem.src;
+        imagemGrande.alt = imagem.alt;
+      });
+    });
+
+    fechar.addEventListener("click", () => {
+      modal.style.display = "none";
+    });
+
+    modal.addEventListener("click", (e) => {
+      if (e.target === modal) {
+        modal.style.display = "none";
+      }
+    });
+
+    document.getElementById("formEvento").addEventListener("submit", function(e) {
+      e.preventDefault();
+
+      const nome = document.getElementById("nome").value;
+      const telefone = document.getElementById("telefone").value;
+      const email = document.getElementById("email").value;
+      const tipoEvento = document.getElementById("tipoEvento").value;
+      const data = document.getElementById("data").value;
+      const participantes = document.getElementById("participantes").value;
+      const observacoes = document.getElementById("observacoes").value;
+      const horario = document.getElementById("horario").value;
+
+      const mensagem =
+        `Olá! Gostaria de consultar os valores para um evento.\n\nNome: ${nome}\nTelefone: ${telefone}\nEmail: ${email}\nTipo de Evento: ${tipoEvento}\nData: ${data}\nParticipantes: ${participantes}\n\nObservacoes: ${observacoes}\nHorário: ${horario}`;
+
+      const numeroRestaurante = "5585991133658";
+      const link = `https://wa.me/${numeroRestaurante}?text=${encodeURIComponent(mensagem)}`;
+      const a = document.createElement("a"); a.href = link; a.target = "_blank"; a.rel = "noopener noreferrer"; document.body.appendChild(a); a.click(); document.body.removeChild(a);
+    });
+  </script>
+
+  <script src="src/javascript/script.js"></script>
+
+  <footer id="localização">
+    <div class="footer-container">
+
+      <div class="footer-info">
+        <h2>Visite-nos</h2>
+
+        <div class="footer-bloco">
+          <div class="footer-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+              <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+            </svg>
+          </div>
+          <div>
+            <span class="footer-label">ENDEREÇO</span>
+            <p class="footer-address">R. Vicente Leite, 520</p>
+            <p class="footer-sub">Meireles, Fortaleza - CE</p>
+            <a
+              href="https://maps.google.com/?q=R.+Vicente+Leite+520+Meireles+Fortaleza+CE"
+              target="_blank"
+              class="footer-maps-link"
+            >Abrir no Google Maps</a>
+          </div>
+        </div>
+
+        <div class="footer-bloco">
+          <div class="footer-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+              <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z"/>
+              <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0"/>
+            </svg>
+          </div>
+          <div>
+            <span class="footer-label">HORÁRIO</span>
+            <p><strong>Seg a Qui:</strong> 18h às 22:30h</p>
+            <p><strong>Sex e Sab:</strong> 18h às 23:30h</p>
+            <p><strong>Dom:</strong> 18h às 22:30h</p>
+          </div>
+        </div>
+
+        <div class="footer-actions">
+          <a href="#evento" class="footer-btn footer-btn-primary">RESERVAR MESA</a>
+          <a
+            href="https://wa.me/5585991133658"
+            target="_blank"
+            class="footer-btn footer-btn-secondary"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+              <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+            </svg>
+            DÚVIDAS
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3981.4!2d-38.5!3d-3.74!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sR.%20Vicente%20Leite%2C%20520%20-%20Meireles%2C%20Fortaleza!5e0!3m2!1spt-BR!2sbr!4v1"
+          width="100%"
+          height="100%"
+          style="border:0;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Localização Cortile Ristorante"
+        ></iframe>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 Cortile Ristorante. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+</body>
+
+</html>
