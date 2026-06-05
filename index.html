@@ -521,6 +521,7 @@
       const email = document.getElementById("email").value;
       const tipoEvento = document.getElementById("tipoEvento").value;
       const data = document.getElementById("data").value;
+<<<<<<< HEAD
       const participantes = document.getElementById("participantes").value;
       const observacoes = document.getElementById("observacoes").value;
       const horario = document.getElementById("horario").value;
@@ -531,6 +532,17 @@
       const numeroRestaurante = "5585991133658";
       const link = `https://wa.me/${numeroRestaurante}?text=${encodeURIComponent(mensagem)}`;
       const a = document.createElement("a"); a.href = link; a.target = "_blank"; a.rel = "noopener noreferrer"; document.body.appendChild(a); a.click(); document.body.removeChild(a);
+=======
+      const convidados = document.getElementById("convidados").value;
+      const observacoes = document.getElementById("observacoes").value;
+
+      const mensagem =
+        `Olá! Gostaria de consultar os valores para um evento.\n\nNome: ${nome}\nTelefone: ${telefone}\nEmail: ${email}\nTipo de Evento: ${tipoEvento}\nData: ${data}\nConvidados: ${convidados}\n\nObservacoes: ${observacoes}`;
+
+      const numeroRestaurante = "5585991133658";
+      const link = `https://wa.me/${numeroRestaurante}?text=${encodeURIComponent(mensagem)}`;
+      window.open(link, "_blank");
+>>>>>>> 258c2f514511def7c51cf2c9f1f14af8237af143
     });
   </script>
 
