@@ -514,36 +514,30 @@
     });
 
     document.getElementById("formEvento").addEventListener("submit", function(e) {
-      e.preventDefault();
+  e.preventDefault();
 
-      const nome = document.getElementById("nome").value;
-      const telefone = document.getElementById("telefone").value;
-      const email = document.getElementById("email").value;
-      const tipoEvento = document.getElementById("tipoEvento").value;
-      const data = document.getElementById("data").value;
-<<<<<<< HEAD
-      const participantes = document.getElementById("participantes").value;
-      const observacoes = document.getElementById("observacoes").value;
-      const horario = document.getElementById("horario").value;
+  const nome = document.getElementById("nome").value;
+  const telefone = document.getElementById("telefone").value;
+  const email = document.getElementById("email").value;
+  const tipoEvento = document.getElementById("tipoEvento").value;
+  const data = document.getElementById("data").value;
+  const horario = document.getElementById("horario").value;
+  const participantes = document.getElementById("participantes").value;
+  const observacoes = document.getElementById("observacoes").value;
 
-      const mensagem =
-        `Olá! Gostaria de consultar os valores para um evento.\n\nNome: ${nome}\nTelefone: ${telefone}\nEmail: ${email}\nTipo de Evento: ${tipoEvento}\nData: ${data}\nParticipantes: ${participantes}\n\nObservacoes: ${observacoes}\nHorário: ${horario}`;
+  const mensagem =
+    `Olá! Gostaria de consultar os valores para um evento.\n\nNome: ${nome}\nTelefone: ${telefone}\nEmail: ${email}\nTipo de Evento: ${tipoEvento}\nData: ${data}\nHorário: ${horario}\nParticipantes: ${participantes}\n\nObservações: ${observacoes}`;
 
-      const numeroRestaurante = "5585991133658";
-      const link = `https://wa.me/${numeroRestaurante}?text=${encodeURIComponent(mensagem)}`;
-      const a = document.createElement("a"); a.href = link; a.target = "_blank"; a.rel = "noopener noreferrer"; document.body.appendChild(a); a.click(); document.body.removeChild(a);
-=======
-      const convidados = document.getElementById("convidados").value;
-      const observacoes = document.getElementById("observacoes").value;
-
-      const mensagem =
-        `Olá! Gostaria de consultar os valores para um evento.\n\nNome: ${nome}\nTelefone: ${telefone}\nEmail: ${email}\nTipo de Evento: ${tipoEvento}\nData: ${data}\nConvidados: ${convidados}\n\nObservacoes: ${observacoes}`;
-
-      const numeroRestaurante = "5585991133658";
-      const link = `https://wa.me/${numeroRestaurante}?text=${encodeURIComponent(mensagem)}`;
-      window.open(link, "_blank");
->>>>>>> 258c2f514511def7c51cf2c9f1f14af8237af143
-    });
+  const numeroRestaurante = "5585991133658";
+  const link = `https://wa.me/${numeroRestaurante}?text=${encodeURIComponent(mensagem)}`;
+  const a = document.createElement("a");
+  a.href = link;
+  a.target = "_blank";
+  a.rel = "noopener noreferrer";
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+});
   </script>
 
   <script src="src/javascript/script.js"></script>
